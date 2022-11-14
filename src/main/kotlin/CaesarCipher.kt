@@ -20,8 +20,8 @@ class Solution {
     fun anotherSolution(s: String, n: Int): String =
         s.toList().joinToString(separator = "") {
             when (it) {
-                in 'A'..'Z' -> ('A'.toInt() + (it.toInt() - 'A'.toInt() + n) % ('Z' - 'A' + 1)).toChar()
-                in 'a'..'z' -> ('a'.toInt() + (it.toInt() - 'a'.toInt() + n) % ('z' - 'a' + 1)).toChar()
+                in 'A'..'Z' -> ('A'.code + (it.code - 'A'.code + n) % ('Z' - 'A' + 1)).toChar()
+                in 'a'..'z' -> ('a'.code + (it.code - 'a'.code + n) % ('z' - 'a' + 1)).toChar()
                 else -> it
             }.toString()
         }
