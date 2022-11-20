@@ -1,5 +1,5 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/12926?language=kotlin
-class Solution {
+class CaesarCipher {
     private val alphabetCounts = 26
 
     fun solution(s : String, n : Int): String {
